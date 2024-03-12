@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/submitregistration.php" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name: </label><br><br>
+            <input type="text" id="fname" name="fname" value="John"><br><br>
+            <label for="lname">Last Name: </label><br><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <label for="email">Email Address: </label><br><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password: </label><br><br>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Referrer</legend>
+            <input type="radio" id="TV" name="referrer" value="TV"><br>
+            <label for="Tv">TV</label><br><br>
+            <input type="radio" id="Internet" name="referrer" value="Internet"><br><br>
+            <label for="Internet">Internet</label><br><br>
+            <input type="radio" id="None" name="referrer" value="None" checked><br><br>
+            <label for="None">None</label><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Terms of Service</legend>
+            <input type="checkbox" id="accept-terms" name="accept-terms" required><br><br>
+            <label for="accept-terms">I accept the Terms of Service</label>
+        </fieldset>
+        <button type="Submit">Register</button>
+    </form>
+    </body>
+</html>
